@@ -10,4 +10,4 @@ myArray.ArrayToString();
 
 2. To get execution time
 var result = Diagnostics.GetExecutionTime(() => AnyMethod(args));
-result contains returned values, execution time is logged to console
+//result contains returned values, execution time is logged to console
