@@ -1,11 +1,11 @@
-Functionalities:
+# Functionalities:
 
-Array Extensions:
-    1. Converts an array to string
+## Array Extensions:
+    ### 1. Converts an array to string
         Usage:
             var myArrray = new int[] {2,7,11,15}; // could be of any type
             myArray.ArrayToString();
-    2. Converts a Jagged array to string
+    ### 2. Converts a Jagged array to string
         Usage:
             int[][] input = {
                 new int[] {1,5},
@@ -14,8 +14,8 @@ Array Extensions:
             };
             Console.WriteLine($"Input is {input.JaggedArrayToString()}");
 
-List Extensions:
-    1. Converts IList to string
+## List Extensions:
+    ### 1. Converts IList to string
         Usage:
             var input = new ArrayList();
             input.Add(45);
@@ -27,8 +27,8 @@ List Extensions:
             Console.WriteLine($"The output is {input.ListToString()}");
             //The output is [ 45, Hello, [ 34, 5, 6 ], [ [ 1, 2, 3, 4 ], [ 56, 67, 56, 89 ] ], [  ] ]
 
-Diagnostics:
-    1. Logs execution time of any method to console
+## Diagnostics:
+    ### 1. Logs execution time of any method to console
         Usage:
             var result = Diagnostics.GetExecutionTime(() => AnyMethod(args));
             //result contains returned values, execution time is logged to console  
