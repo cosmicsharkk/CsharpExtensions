@@ -1,11 +1,11 @@
 # Functionalities:
 
 ## Array Extensions:
-### Converts an array to string
+### 1. Converts an array to string
         Usage:
             var myArrray = new int[] {2,7,11,15}; // could be of any type
             myArray.ArrayToString();
-### Converts a Jagged array to string
+### 2. Converts a Jagged array to string
         Usage:
             int[][] input = {
                 new int[] {1,5},
@@ -13,17 +13,17 @@
                 new int[] {3,5}
             };
             Console.WriteLine($"Input is {input.JaggedArrayToString()}");
-### Converts a integer Array to LinkedList
+### 3. Converts a integer Array to LinkedList
         Usage: 
             var head = (new int[] {1,3,6,7,878,8,9,34}).ArrayToLinkedList();
 
 ## Linked List Extensions
-### Converts a LinkedList to string
+### 1. Converts a LinkedList to string
         Usage:
             Console.WriteLine($"LinkedList = {head.LinkedListToString()}");
 
 ## List Extensions:
-### Converts IList to string
+### 1. Converts IList to string
         Usage:
             var input = new ArrayList();
             input.Add(45);
@@ -36,7 +36,7 @@
             //The output is [ 45, Hello, [ 34, 5, 6 ], [ [ 1, 2, 3, 4 ], [ 56, 67, 56, 89 ] ], [  ] ]
 
 ## Diagnostics:
-### Logs execution time of any method to console
+### 1. Logs execution time of any method to console
         Usage:
             var result = Diagnostics.GetExecutionTime(() => AnyMethod(args));
             //result contains returned values, execution time is logged to console  
