@@ -25,5 +25,17 @@ namespace MyExtensions
             return result;
         }
 
+        //Only works for integer arrays as our scope is to use this while solving leetcode problems
+        public static ListNode ArrayToLinkedList(this int[] input){
+            if(input.Length == 0) return null;
+            ListNode head = new ListNode(input[0]);
+            ListNode pointer = head;
+            for(int i = 1; i < input.Length; i++){
+                pointer.next = new ListNode(input[i]);
+                pointer = pointer.next;
+            }
+            return head;
+        }
+
     }
 }
