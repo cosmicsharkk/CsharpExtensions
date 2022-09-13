@@ -7,6 +7,7 @@ namespace MyExtensions
 
         public static string ArrayToString<T>(this T[] input){
             string result = "";
+            if(input == null) return result;
             for(int i = 0; i < input.Length; i++){
                 result += input[i].ToString();
                 if(i < input.Length - 1) result += ", ";
